@@ -6,8 +6,8 @@ const Blogs = () => {
   const[text , setText] = useState([])
 
  async function getData(){
-  const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=58c2f2143dd94b329b3a16fc4648442e`)
-setText(res.data.articles)
+  const res = await axios.get(`https://636104f4af66cc87dc208deb.mockapi.io/NewsAPI`)
+setText(res.data)
 }
 
 useEffect(()=>{
