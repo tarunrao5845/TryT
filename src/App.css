@@ -1,38 +1,133 @@
-.App {
+#bb a {
+  border-bottom: 3px solid white;
+}
+#bb1:hover{
+transition: 1.5s;
+  border-bottom: 3px solid #6415ff;
+}
+#bb2:hover{
+transition: 1.5s;
+border-bottom: 3px solid #fe4102;
+}
+#bb3:hover{
+transition: 1.5s;
+  border-bottom: 3px solid #e8ff15;
+}
+#bb4:hover{
+transition: 1.5s;
+  border-bottom: 3px solid #fa557e;
+}
+#bb5:hover{
+transition: 1.5s;
+border-bottom: 3px solid #04f95a;
+}
+
+.boxonimg{
+  color:white;
+  position:absolute;
+  margin-top: 430px;
+  width: 350px;
+  height: 200px;
+  background-color:#3c0d99 ;
+   padding: 20px 40px;
+}
+
+#h4{
+  font-size: 5.5rem;
+  color: #3c0d99;
+  font-weight:bold;
+}
+#rightimg{
+margin-left: 100px;
+}
+.sec1box{
+  margin-top: 200px;
+  background-color: #3c0d99 ;
+  width: 100%;
+  height:450px;
+  color: white;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#sh{
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 56px;
+  padding-top: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#sp{
+  margin:20px 200px;
+  line-height: 24px;
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+.container2{
+  margin: 100px 0px;
+}
+#bgs{
+  background-color:#3c0d99;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+   margin: 20px;
+}
+.boxes1{
+  display: flex ;
+  justify-content: center ;
+}
+.boxes2{
+  display: flex ;
+  justify-content: center ;
+}
+#sec3h{
+  font-size: 3rem;
+  font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1000px){
+  .right{
+    display: none;
+  }
+  #h4{
+    color:#3c0d99;
+    font-size:34px;
+    font-weight: bolder;
+  }
+  .rightbox{
+    display:none;
+  }
+
+  .boxonimg{
+    display: none;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media(max-width:770px){
+.boxes1{
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.boxes2{
+  display: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rightS{
+  display: none;
+}
 }
