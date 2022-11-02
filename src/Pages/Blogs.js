@@ -5,14 +5,14 @@ const Blogs = () => {
  
   const[text , setText] = useState([])
 
-  useEffect(()=>{
-    async function getData(){
-const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=58c2f2143dd94b329b3a16fc4648442e`)
+ async function getData(){
+  const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=58c2f2143dd94b329b3a16fc4648442e`)
 setText(res.data.articles)
-console.log(res)
-    }
-    getData()
-  })
+}
+
+useEffect(()=>{
+  getData()
+})
 
   return (
     <>
